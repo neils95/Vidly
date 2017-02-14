@@ -30,7 +30,7 @@ namespace Vidly.Controllers
 		[Route("Customers/details/{customerId:int:regex(1|2)}")]
 		public ActionResult Details(int customerId)
 		{
-			var customer = _context.Customers.SingleOrDefault(c => c.Id == customerId);
+			var customer = _context.Customers.Include(c => c.MembershipType).SingleOrDefault(c => c.Id == customerId);
 			if (customer == null)
 				return HttpNotFound();
 
