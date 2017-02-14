@@ -201,9 +201,22 @@
     <Compile Include="Migrations\201702140208523_AddBirthdateToCustomer.Designer.cs">
       <DependentUpon>201702140208523_AddBirthdateToCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201702140246116_AddGenreAndUpdateMovie.cs" />
+    <Compile Include="Migrations\201702140246116_AddGenreAndUpdateMovie.Designer.cs">
+      <DependentUpon>201702140246116_AddGenreAndUpdateMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702140256466_PopulateGenre.cs" />
+    <Compile Include="Migrations\201702140256466_PopulateGenre.Designer.cs">
+      <DependentUpon>201702140256466_PopulateGenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702140310268_MakeAllMovieColumnsNonNullable.cs" />
+    <Compile Include="Migrations\201702140310268_MakeAllMovieColumnsNonNullable.Designer.cs">
+      <DependentUpon>201702140310268_MakeAllMovieColumnsNonNullable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
@@ -271,11 +284,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Movies\Random.cshtml" />
     <Content Include="Views\Shared\_NavBar.cshtml" />
     <Content Include="Views\Movies\Index.cshtml" />
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Customers\Details.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -311,6 +324,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201702140208523_AddBirthdateToCustomer.resx">
       <DependentUpon>201702140208523_AddBirthdateToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702140246116_AddGenreAndUpdateMovie.resx">
+      <DependentUpon>201702140246116_AddGenreAndUpdateMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702140256466_PopulateGenre.resx">
+      <DependentUpon>201702140256466_PopulateGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702140310268_MakeAllMovieColumnsNonNullable.resx">
+      <DependentUpon>201702140310268_MakeAllMovieColumnsNonNullable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

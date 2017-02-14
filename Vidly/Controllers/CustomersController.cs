@@ -27,7 +27,7 @@ namespace Vidly.Controllers
 		}
 
 		//Get: Customers/Details/{customerId}
-		[Route("Customers/details/{customerId:int:regex(1|2)}")]
+		[Route("Customers/details/{customerId:int}")]
 		public ActionResult Details(int customerId)
 		{
 			var customer = _context.Customers.Include(c => c.MembershipType).SingleOrDefault(c => c.Id == customerId);

@@ -17,6 +17,7 @@ namespace Vidly.Models
 		public DateTime? Birthdate { get; set; }
 
 		public bool IsSubscribedToNewsletter { get; set; }
+		
 		//Navigation property, allows to naavigate from one type to another.
 		public MembershipType MembershipType { get; set; }
 

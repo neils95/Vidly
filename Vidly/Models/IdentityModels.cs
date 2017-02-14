@@ -23,8 +23,10 @@ namespace Vidly.Models
         //represenets customer table in the database. 
         //Do not need to include Membership Type as it is a navigation property.
         public DbSet<Customer> Customers { get; set; }
+		public DbSet<Movie> Movies { get; set; }
 
-        public ApplicationDbContext()
+
+		public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
