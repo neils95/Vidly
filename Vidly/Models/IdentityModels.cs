@@ -20,7 +20,8 @@ namespace Vidly.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
-        //represenets customer table in the database
+        //represenets customer table in the database. 
+        //Do not need to include Membership Type as it is a navigation property.
         public DbSet<Customer> Customers { get; set; }
 
         public ApplicationDbContext()
